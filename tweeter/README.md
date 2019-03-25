@@ -23,5 +23,5 @@ This repository is the project completed by Hao Jiang in Lighthouse lab.
 This list can be found inside package.json file.
 
 ## ScreenShots:
-!["Screenshot of tweet compose box"](https://github.com/Polatouche0201/W3_Project_Tweeter/blob/master/docs/ComposeNewTweet.jpg)
-!["Screenshot of tweets"](https://github.com/Polatouche0201/W3_Project_Tweeter/blob/master/docs/TweetsList.jpg)
+!["Screenshot of tweet compose box"](https://github.com/Polatouche0201/Lighthouse_Week3/blob/master/tweeter/docs/ComposeNewTweet.jpg)
+!["Screenshot of tweets"](https://github.com/Polatouche0201/Lighthouse_Week3/blob/master/tweeter/docs/TweetsList.jpg)
