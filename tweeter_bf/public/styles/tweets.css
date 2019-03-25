@@ -1,0 +1,94 @@
+/*The whole tweet section*/
+.tweet_section {
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  margin: 15px 0px 15px 0px;
+}
+
+.tweet_section:hover {
+  border-width: 3px;
+}
+
+/*Header of a tweet*/
+.tweet_header {
+  display: flex;
+  align-items: center;
+  background-color: lightgrey;
+  border-radius: 7px 7px 0px 0px;
+  padding: 0 10px 0 10px;
+  width: auto;
+  height: 48px;
+}
+
+.tweet_avatar {
+  width: 32px;
+  height: 32px;
+}
+
+.tweet_handle {
+  margin-left: auto;
+}
+
+/*Contents of a tweet*/
+.tweet_content {
+  /*display: flex;*/
+  /*margin: auto;*/
+  padding: 0 10px 0 10px;
+}
+
+.tweet_content_text {
+
+}
+
+.tweet_content_pic {
+
+}
+
+.tweet_content_vedio {
+
+}
+
+/*Footer of a tweet*/
+.tweet_footer {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  margin-top: 0.5em;
+  border-top: 1px solid lightgrey;
+  padding: 0 10px 0 10px;
+}
+
+.tweet_footer_date {
+  color: grey;
+  font-size: 0.75em;
+}
+
+/*footer icons layout setting*/
+.tweet_footer_icons {
+  margin-left: auto;
+}
+
+.footer_icon {
+  display: none;
+}
+
+.tweet_section:hover .footer_icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0px 0px 0px 10px;
+}
+
+.chat {
+
+}
+
+.heart {
+
+}
+
+.star {
+
+}

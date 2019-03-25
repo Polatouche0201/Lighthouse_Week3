@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Tweeter - Home Page</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Sniglet:400,800&amp;subset=latin-ext" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,700i" rel="stylesheet">-->
+    <!-- App CSS -->
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+
+    <!-- External JS -->
+    <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <!-- App JS -->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/create-new-tweet.js"></script>
+<!--     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script>
+      $(tweetBtnClickAjax);
+
+      function tweetBtnClickAjax () {
+        var $tweenBtn = $('#submit_btn');
+        $tweenBtn.on('click', function(e) {
+          event.preventDefault();
+          console.log("default " + e.type + " prevented");
+        });
+        $tweenBtn.on('click', function () {
+          console.log('Tweet Button Clicked, performing ajax call...');
+          console.log($('#compose_text').val());
+          var str = $("form").serialize();
+          console.log(str);
+
+          $.ajax ({
+            method: "POST",
+            url: "/tweets",
+            data: {
+              text: $('#compose_text').val()
+            },
+            // success: function( resp ) {
+            //   alert( $('#compose_text').val() + " Posted!");
+            // },
+            error: function( req, status, err ) {
+              alert('something went wrong', status, err );
+            }
+          }).done(function( msg ) {
+            alert("Posted Completed!\n" + msg);
+          }).success(function(resp) {
+            alert( $('#compose_text').val() + " Posted!");
+          });
+        });
+      }
+    </script> -->
+
+  </head>
+
+  <body>
+    <!-- Top nav bar (fixed) -->
+    <nav id="navbar" class="navbar fixed-top">
+      <img class="logo" src="/images/bird.png">
+      <span class="header">Tweeter - Make by Hao Jiang</span>
+      <input id="navbar_compose_btn" class="compose_btn" type="submit" value="Compose">
+    </nav>
+    <!-- Page-specific (main) content here -->
+    <main id="tweets-container" class="container">
+      <!-- <p>test</p> -->
+      <section id="compose" class="new-tweet">
+        <h2 class="compose_header">Compose Tweet</h2>
+        <span class="error">Error Msg</span>
+        <!-- <form id="submit_form" method="POST" action="/tweets"> -->
+        <form id="submit_form">
+          <textarea id="compose_text" class="compose_text" name="text" placeholder="What are you humming about?"></textarea>
+          <input id="submit_btn" type="submit" value="Tweet">
+          <span class="max">/ 140</span>
+          <span id="compose_counter" class="counter">0</span>
+        </form>
+      </section>
+
+    </main>
+  </body>
+</html>
